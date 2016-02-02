@@ -35,7 +35,7 @@ public class DoclerHoldingTest {
 	
 	public void openBrowser() {
 		FirefoxProfile profile = new FirefoxProfile();
-		FirefoxBinary binary = new FirefoxBinary(new File("C://Program Files//Mozilla Firefox//firefox.exe"));
+		FirefoxBinary binary = new FirefoxBinary(new File("C://Program Files (x86)//Mozilla Firefox//firefox.exe"));
 		driver = new FirefoxDriver(binary,profile);   
 		driver.manage().window().maximize();
 		driver.get(DoclerHoldingTestConstants.SERVER_URL);
