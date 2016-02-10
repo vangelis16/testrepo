@@ -9,7 +9,6 @@ public class DoclerHoldingMessageWriter {
 	
 
 	public static final int DOCLERHOLDING_CONSOLE_MODE = 1;
-	public static final int DOCLERHOLDING_LOGFILE_MODE = 2;
 	
 	public DoclerHoldingMessageWriter(BufferedWriter writer, int mode) {
 		this.writer = writer;
@@ -17,12 +16,8 @@ public class DoclerHoldingMessageWriter {
 	}
 	
 	public void writeMessage(String message) throws Exception {
-		if (mode == DOCLERHOLDING_LOGFILE_MODE) {
-			writer.write(message + "\n");
-			if (message.indexOf("LIFELOGGER") != -1) {
-			}	
-		} else {
-			System.out.println(message);
+		if (message.indexOf("DOCLERHOLDING") != -1) {
+		System.out.println(message);
 		}
 			
 	}
