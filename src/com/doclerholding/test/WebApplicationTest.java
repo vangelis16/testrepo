@@ -31,6 +31,7 @@ public class WebApplicationTest extends DoclerHoldingTest {
 		//click on Home button
 		driver.findElement(By.id("home")).click();
 		//check for welcome message is displayed
+		Thread.sleep(2000);
 		List<WebElement> listItems1 = driver.findElements(By.tagName("h1"));
 		for (int i = 0; i < listItems1.size(); i++) {
 			WebElement elem = listItems1.get(i);
