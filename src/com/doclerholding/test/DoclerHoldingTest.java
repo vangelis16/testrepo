@@ -3,6 +3,7 @@ package com.doclerholding.test;
 import java.io.File;
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -22,11 +23,7 @@ public class DoclerHoldingTest {
 	public DoclerHoldingMessageWriter doclerholdingMessageWriter;
 	
 	public DoclerHoldingTest() {
-		doclerholdingMessageWriter = new DoclerHoldingMessageWriter(null, DoclerHoldingMessageWriter.DOCLERHOLDING_CONSOLE_MODE);
-	}
-	
-	public void setMessageWriter(DoclerHoldingMessageWriter doclerholdingMessageWriter) {
-		this.doclerholdingMessageWriter = doclerholdingMessageWriter;
+		doclerholdingMessageWriter = new DoclerHoldingMessageWriter(DoclerHoldingMessageWriter.DOCLERHOLDING_CONSOLE_MODE);
 	}
 	
 	public void writeMessage(String message) throws Exception {
