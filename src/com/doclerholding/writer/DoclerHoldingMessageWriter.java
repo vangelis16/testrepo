@@ -1,17 +1,13 @@
 package com.doclerholding.writer;
 
-import java.io.BufferedWriter;
-
 public class DoclerHoldingMessageWriter {
 	
-	private BufferedWriter writer;
 	private int mode;
 	
 
 	public static final int DOCLERHOLDING_CONSOLE_MODE = 1;
 	
-	public DoclerHoldingMessageWriter(BufferedWriter writer, int mode) {
-		this.writer = writer;
+	public DoclerHoldingMessageWriter(int mode) {
 		this.mode = mode;
 	}
 	
